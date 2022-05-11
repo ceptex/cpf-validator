@@ -13,9 +13,10 @@ function validaCPF(cpf) {
             soma += numeros.charAt(10 - i) * i;
         }
 
+        // This logic was created by the brazilian government
         var resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
 
-        // validação do primeiro digito
+        // First digit validation
         if (resultado != digitos.charAt(0)) {
             return false;
         }
@@ -26,7 +27,7 @@ function validaCPF(cpf) {
         }
         resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
 
-        //Validação do segundo digito
+        // Second digit validation
         if (resultado != digitos.charAt(1)) {
             return false;
         }
@@ -36,11 +37,13 @@ function validaCPF(cpf) {
 
 function validacao() {
     console.log('Iniciando validação CPF')
+    //cleaning possible previous alerts
     document.getElementById('success').style.display ='none';
     document.getElementById('error').style.display = 'none';
 
     var cpf = document.getElementById('cpf_digitado').value;
     var resultadoValidacao = validaCPF(cpf);
+    //showing alert to the user
     if (resultadoValidacao) {
         document.getElementById('success').style.display = 'block';
     } else {

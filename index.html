@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Validador de CPF</title>
+    <title>CPF Validator</title>
   </head>
   <body>
     <nav>
       <div class="container">
-        <div><h1>Validador de CPF</h1></div>
+        <div><h1>CPF Validator</h1></div>
         <div>
           <h3>
-            Através deste simples algoritimo, veremos divers recursos e
-            habilidades da linguagem Javascript
+            Algorithm that tests the validity of CPF's user with Javascript.
           </h3>
         </div>
       </div>
@@ -25,28 +24,38 @@
           <div class="cpf-btn">CPF</div>
           <input
             type="text"
-            placeholder="Digite o CPF para validação"
+            placeholder="Type CPF for validation"
             id="cpf_digitado"
+            autofocus
           />
         </div>
-        <div class="cpf-warning">Digite somente números</div>
-        <div><button type="button" onclick="validacao()">Validar!</button></div>
-        <div id="success" style="display: none;" role="alert">
-          <strong>Oba!</strong> Seu CPF é válido
+        <div class="cpf-warning">Use only numbers</div>
+        <div>
+          <button type="button" onclick="validacao()">Validate!</button>
         </div>
-        <div id="error" style="display: none;" role="alert">
-          <strong>Ops!</strong> Seu CPF não é válido
+        <div id="success" style="display: none" role="alert">
+          <strong>Yay!</strong> Valid CPF
+        </div>
+        <div id="error" style="display: none" role="alert">
+          <strong>Ops!</strong> CPF not valid
         </div>
         <div class="line"></div>
       </div>
     </main>
     <footer>
       <div class="container credit">
-        <h3>
-          <a href="https://github.com/ceptex" target="_blank"
-            >Created by Caio Teixeira</a
-          >
-        </h3>
+        <div class="author">
+          <h3>
+            <a href="https://github.com/ceptex" target="_blank"
+              >Created by <strong>Caio Teixeira</strong></a
+            >
+          </h3>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/ceptex" target="_blank">
+            <img src="github-light.png" alt=""
+          /></a>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
