@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70vw;
+  height: 250px;
+}
+
+nav h1 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+nav h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 62vh;
+}
+
+.cpf-data {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cpf-btn {
+  border: 1px solid #999;
+  background-color: #eee;
+  border-radius: 3px 0px 0px 3px;
+  padding: 5px;
+}
+
+.cpf-data input {
+  padding: 5px;
+  width: 100%;
+}
+
+.cpf-warning {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.container button {
+  padding: 8px;
+  margin-bottom: 30px;
+  background-color: rgb(97, 121, 228);
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    margin-top: 40px;
+    border: 0.5px solid #999;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 103px;
+}
+
+.credit {
+  height: 100px;
+}
+
+.credit h3 {
+  font-size: 14px;
+  text-align: end;
+}
+
+.credit h3 a {
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+}
+
+/* ALERTS */
+
+#success {
+    margin: -15px;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: rgb(130, 230, 100);
+}
+
+#error {
+    margin: -15px;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: rgb(226, 124, 124);
+}
