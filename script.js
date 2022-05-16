@@ -1,4 +1,33 @@
-console.log('Javascript carregado')
+console.log('Javascript loaded')
+
+var cpf = document.getElementById('cpf_digitado').value;
+
+function validacao() {
+    console.log('Loading CPF validation')
+    //cleaning possible previous alerts
+    document.getElementById('success').style.display = 'none';
+    document.getElementById('error').style.display = 'none';
+
+    var cpf = document.getElementById('cpf_digitado').value;
+    var resultadoValidacao = validaCPF(cpf);
+    //showing alert to the user
+    if (resultadoValidacao) {
+        document.getElementById('success').style.display = 'block';
+    } else {
+        document.getElementById('error').style.display = 'block';
+    }
+}
+
+// function sameCharCheck() {
+//     let n = cpf.length;
+//     let cpf = document.getElementById('cpf_digitado').value;
+//     for (let i = 0; i < n; i++) {
+//         if (cpf[i] != cpf[i - 1]) {   
+//             return false;
+//         }
+//     return true;
+//     }
+// }
 
 function validaCPF(cpf) {
     console.log(cpf.length);
@@ -35,18 +64,3 @@ function validaCPF(cpf) {
     }
 }
 
-function validacao() {
-    console.log('Iniciando validação CPF')
-    //cleaning possible previous alerts
-    document.getElementById('success').style.display ='none';
-    document.getElementById('error').style.display = 'none';
-
-    var cpf = document.getElementById('cpf_digitado').value;
-    var resultadoValidacao = validaCPF(cpf);
-    //showing alert to the user
-    if (resultadoValidacao) {
-        document.getElementById('success').style.display = 'block';
-    } else {
-        document.getElementById('error').style.display = 'block';
-    }
-}

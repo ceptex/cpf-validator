@@ -1,4 +1,4 @@
-# CPf Validator Project
+# CPF Validator Project
 
 Studying validation algorithms with JavaScript.
 
